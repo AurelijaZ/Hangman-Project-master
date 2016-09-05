@@ -4,14 +4,19 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    
     <title>Hangman Game</title>
+    <meta charset="utf-8"/> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
-        <div class="form-horizontal">
+
     <h1>Hangman</h1> 
-            </div>
+
        
         <asp:Image Visible="true" ID="Image1" runat="server" src="Untitled-1.jpg"  />
         <asp:Image Visible="false" ID="Image2" runat="server" src="Untitled-2.jpg"  />
@@ -61,7 +66,8 @@
         <asp:Button ID="Button24" runat="server" Text="X" OnCommand="LetterGuessed"/>
         <asp:Button ID="Button25" runat="server" Text="Y" OnCommand="LetterGuessed"/>
         <asp:Button ID="Button26" runat="server" Text="Z" OnCommand="LetterGuessed"/>
-        
+        <br />
+        <br />
         <asp:Button ID="ButtonWord" runat="server" Text="New Word" OnCommand="ButtonWord_Click"/>
         <br />
         <br />
