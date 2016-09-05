@@ -15,9 +15,11 @@
     <form id="form1" runat="server">
     <div>
 
-    <h1>Hangman</h1> 
-
+        
+    <div class="panel panel-heading text-center"><h1>Hangman </h1> </div>
+            </div>
        
+        <div class="panel panel-heading text-center">
         <asp:Image Visible="true" ID="Image1" runat="server" src="Untitled-1.jpg"  />
         <asp:Image Visible="false" ID="Image2" runat="server" src="Untitled-2.jpg"  />
         <asp:Image Visible="false" ID="Image3" runat="server" src="Untitled-3.jpg"  />
@@ -37,7 +39,8 @@
         <asp:Label ID="Test2" runat="server" Text=""></asp:Label>
         <br />
         <br />
-
+        </div>
+        <div class="panel panel-heading text-center">
         <asp:Button ID="Button1" runat="server" Text="A" OnCommand="LetterGuessed" />
         <asp:Button ID="Button2" runat="server" Text="B" OnCommand="LetterGuessed" />
         <asp:Button ID="Button3" runat="server" Text="C" OnCommand="LetterGuessed"/>
@@ -71,7 +74,7 @@
         <asp:Button ID="ButtonWord" runat="server" Text="New Word" OnCommand="ButtonWord_Click"/>
         <br />
         <br />
-       
+       </div>
     </div>
     </form>
 </body>
